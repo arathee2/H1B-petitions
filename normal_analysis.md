@@ -1,4 +1,4 @@
-Analysis of Data Science jobs from H1B Visa Petitions Data
+Analysis H1B Visa Petitions Data
 ================
 
 Analysis of the H1B visa petitions made.
@@ -149,7 +149,8 @@ ggplot(data = top_employer, aes(x = reorder(JOB_TITLE, percent),
                                 y = percent, fill = JOB_TITLE)) +
     geom_bar(stat = "identity") +
     geom_text(aes(label = percent), vjust = 1.1, hjust = 1.2) + 
-    labs(x = "JOB TITLE", y = "Petitions Made(in percentage)") + 
+    labs(x = "JOB TITLE", y = "Petitions Made(in percentage)") +
+    theme(legend.position = "none") +
     scale_fill_manual(values = mycolors) +
     coord_flip()
 ```
