@@ -1,4 +1,4 @@
-# h1b-petition
+# H1B-petition
 Analysis of H1B petitions data.
 
 # Source
